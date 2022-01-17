@@ -51,8 +51,8 @@ def preferred_city():
             if day in RECORD_DAYS:
                 break
         except (ValueError, KeyboardInterrupt):
-            print('Your entry is invalid. You can only enter Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or All')
-            print('Please enter Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or All')
+            print('Your entry is invalid. You can only enter Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, or Saturday')
+            print('Please enter Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, or Saturday')
 
 
     print('-'*40)
