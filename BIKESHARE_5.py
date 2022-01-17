@@ -41,8 +41,8 @@ def preferred_city():
             if month in RECORD_MONTHS:
                 break
         except (ValueError, KeyboardInterrupt):
-            print('Your entry is invalid. You can only enter January, February, March, April, May, June or All')
-            print('Please enter January, February, March, April, May, June or All')
+            print('Your entry is invalid. You can only enter January, February, March, April, May, or June')
+            print('Please enter January, February, March, April, May, or June')
 
     # Getting user input for day of the week (All, Sunday, Monday, ... , Saturday)
     while True:
