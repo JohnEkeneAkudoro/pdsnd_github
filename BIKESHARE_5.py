@@ -187,6 +187,7 @@ def user_stats(df):
     if 'Gender' in df.columns:
         gender_counts = df['Gender'].value_counts()
         print('Counts of gender is: /n' + str(gender_counts))
+        print('Note that Gender data is ONLY available in Chicago and New York City')
 
     # Displaying earliest, most recent, and Top 3 most common year of birth
     # Remembering that Birth Year columns is present in Chicago & New York City Dictionary Keys and not present in Washington Dictionary Key
