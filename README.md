@@ -12,6 +12,6 @@ Describe what your project is about and what it does
 ### Files Used
 Include the files used
 
-### Credits
+### Referencing
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
