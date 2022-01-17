@@ -200,6 +200,7 @@ def user_stats(df):
 
         most_common_birth_year = df['Birth Year'].value_counts().nlargest(3)
         print('Most common year of birth is: /n' + str(most_common_birth_year))
+        print('Note that Birth Year data is ONLY available in Chicago and New York City')
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
