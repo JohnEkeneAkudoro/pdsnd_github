@@ -41,8 +41,8 @@ def preferred_city():
             if month in RECORD_MONTHS:
                 break
         except (ValueError, KeyboardInterrupt):
-            print('Your entry is invalid. You can only enter January, February, March, April, May, June or All')
-            print('Please enter January, February, March, April, May, June or All')
+            print('Your entry is invalid. You can only enter January, February, March, April, May, or June')
+            print('Please enter January, February, March, April, May, or June')
 
     # Getting user input for day of the week (All, Sunday, Monday, ... , Saturday)
     while True:
@@ -51,8 +51,8 @@ def preferred_city():
             if day in RECORD_DAYS:
                 break
         except (ValueError, KeyboardInterrupt):
-            print('Your entry is invalid. You can only enter Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or All')
-            print('Please enter Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday or All')
+            print('Your entry is invalid. You can only enter Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, or Saturday')
+            print('Please enter Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, or Saturday')
 
 
     print('-'*40)
@@ -187,6 +187,7 @@ def user_stats(df):
     if 'Gender' in df.columns:
         gender_counts = df['Gender'].value_counts()
         print('Counts of gender is: /n' + str(gender_counts))
+        print('Note that Gender data is ONLY available in Chicago and New York City')
 
     # Displaying earliest, most recent, and Top 3 most common year of birth
     # Remembering that Birth Year columns is present in Chicago & New York City Dictionary Keys and not present in Washington Dictionary Key
@@ -199,6 +200,7 @@ def user_stats(df):
 
         most_common_birth_year = df['Birth Year'].value_counts().nlargest(3)
         print('Most common year of birth is: /n' + str(most_common_birth_year))
+        print('Note that Birth Year data is ONLY available in Chicago and New York City')
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
