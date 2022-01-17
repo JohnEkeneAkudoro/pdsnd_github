@@ -9,7 +9,7 @@ Replace the Project Title
 ### File Description
 Describe what your project is about and what it does
 
-### Files used
+### Files Used
 Include the files used
 
 ### Credits
